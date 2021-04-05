@@ -18,78 +18,25 @@
         <java.version>1.8</java.version>
     </properties>
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.springframework/org.springframework.web -->
-       <!-- <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>org.springframework.web</artifactId>
-            <version>3.2.2.RELEASE</version>
-        </dependency>-->
         <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>2.4.4</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot</artifactId>
-            <version>2.4.4</version>
-        </dependency>
         <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
-            <version>2.4.4</version>
         </dependency>
-       <!-- <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-            <version>5.3.1</version>
-        </dependency>-->
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
-        <!--<dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
-            <version>5.3.5</version>
-        </dependency>-->
-         <dependency>
-              <groupId>org.springframework.boot</groupId>
-              <artifactId>spring-boot-dependencies</artifactId>
-              <version>1.5.6.RELEASE</version>
-              <type>pom</type>
-              <scope>import</scope>
-            </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.mybatis.spring.boot/mybatis-spring-boot-starter -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <version>2.1.4.RELEASE</version>
-            <scope>test</scope>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.1.4</version>
         </dependency>
 
-
-        <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis</artifactId>
-            <version>3.5.6</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis-spring</artifactId>
-            <version>2.0.6</version>
-        </dependency>
-
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-jdbc</artifactId>
-            <version>2.4.0</version>
-        </dependency>
         <!-- oracle JDBC驱动 -->
         <dependency>
             <groupId>com.oracle.database.jdbc</groupId>
@@ -103,24 +50,27 @@
             <version>12.1.0.1-atlassian-hosted</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/cn.easyproject/orai18n  连接数据库字符集问题-->
+        <!-- https://mvnrepository.com/artifact/net.sourceforge.jexcelapi/jxl -->
         <dependency>
-            <groupId>cn.easyproject</groupId>
-            <artifactId>orai18n</artifactId>
-            <version>12.1.0.2.0</version>
+            <groupId>net.sourceforge.jexcelapi</groupId>
+            <artifactId>jxl</artifactId>
+            <version>2.6.12</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.jdom/jdom -->
+        <dependency>
+            <groupId>org.jdom</groupId>
+            <artifactId>jdom</artifactId>
+            <version>2.0.2</version>
+        </dependency>
 
-        <!--    alibaba 没有这个jar  目前是在apache仓库下载的
-                <dependency>
-                        <groupId>jxl</groupId>
-                        <artifactId>jxl</artifactId>
-                        <version>1.0</version>
-                    </dependency>
-                    -->
-
-
-        <!-- https://mvnrepository.com/artifact/commons-io/commons-io File需要java.io-->
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.12.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
@@ -139,27 +89,6 @@
             <artifactId>poi-ooxml</artifactId>
             <version>5.0.0</version>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.jdom/jdom  xml导入excel所需jar包-->
-        <dependency>
-            <groupId>org.jdom</groupId>
-            <artifactId>jdom</artifactId>
-            <version>2.0.2</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 StringUtils使用-->
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>3.12.0</version>
-        </dependency>
-
-    <!--    &lt;!&ndash; https://mvnrepository.com/artifact/org.mybatis.spring.boot/mybatis-spring-boot-starter &ndash;&gt;
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>2.1.4</version>
-        </dependency>-->
-
 
     </dependencies>
 
