@@ -1,9 +1,11 @@
 package com.excel.lianxi.excel.poi;
 
 
-import com.sun.rowset.internal.Row;
-import javafx.scene.control.Cell;
-import org.apache.tomcat.util.http.fileupload.FileUtils;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.commons.io.FileUtils;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -24,7 +26,7 @@ public class PoiExportExcel2 {
         //创建一个工作表sheet
         Sheet sheet = workbook.createSheet();
         //创建第一行
-        Row row = sheet.createRow(0);
+        Row row = (Row) sheet.createRow(0);
         Cell cell = null;
         //插入第一行数据 id,name,sex
         for (int i = 0; i < title.length; i++) {
@@ -33,7 +35,7 @@ public class PoiExportExcel2 {
         }
         //追加数据
         for (int i = 1; i <= 10; i++) {
-            Row nextrow = sheet.createRow(i);
+            Row nextrow = (Row) sheet.createRow(i);
             Cell cell2 = nextrow.createCell(0);
             cell2.setCellValue("a" + i);
             cell2 = nextrow.createCell(1);

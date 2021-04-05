@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.excel.lianxi.huaxia.excel.dao.GenertExcelDao">
+
+
+    <resultMap id="consultAccountResult" type="com.excel.lianxi.huaxia.excel.po.ConsultAccount">
+        <result property="applicationNo" column=""/>
+        <result property="custAccountNo" column=""/>
+        <result property="investorName" column=""/>
+        <result property="certificateNo" column=""/>
+    </resultMap>
+
+    <resultMap id="strategyAccountResult" type="com.excel.lianxi.huaxia.excel.po.StrategyAccount">
+        <result property="applicationNo" column=""/>
+        <result property="custAccountNo" column=""/>
+        <result property="strategyAccountId" column=""/>
+        <result property="strategyId" column=""/>
+        <result property="transactionAccountId" column=""/>
+    </resultMap>
+
+    <resultMap id="requestResult" type="com.excel.lianxi.huaxia.excel.po.Request">
+        <result property="appSheetSerialNo" column=""/>
+        <result property="invertConsultAccountId" column=""/>
+        <result property="strategyAccountId" column=""/>
+        <result property="transactionAccountNo" column=""/>
+        <result property="businessCode" column=""/>
+        <result property="strategyId" column=""/>
+        <result property="fundCode" column=""/>
+        <result property="amount" column=""/>
+
+    </resultMap>
+
+    <resultMap id="confirmResult" type="com.excel.lianxi.huaxia.excel.po.Confirm">
+        <result property="oriAppSheetSerialNo" column=""/>
+        <result property="invertConsultAccountId" column=""/>
+        <result property="strategyAccountId" column=""/>
+        <result property="transactionAccountNo" column=""/>
+        <result property="businessCode" column=""/>
+        <result property="strategyId" column=""/>
+        <result property="fundCode" column=""/>
+        <result property="confirmedAmount" column=""/>
+    </resultMap>
+
+    <resultMap id="shareResult" type="com.excel.lianxi.huaxia.excel.po.Share">
+        <result property="strategyAccountId" column=""/>
+        <result property="transactionAccountNo" column=""/>
+        <result property="amount" column=""/>
+    </resultMap>
+
+    <select id="getConsultAccount" parameterType="String" resultMap="confirmResult">
+
+    </select>
+
+    <select id="getStrategyAccount" parameterType="String" resultMap="confirmResult">
+
+    </select>
+
+    <select id="getRequest" parameterType="String" resultMap="confirmResult">
+
+    </select>
+
+    <select id="getConfirm" parameterType="String" resultMap="confirmResult">
+
+    </select>
+
+    <select id="getShare" parameterType="String" resultMap="confirmResult">
+
+    </select>
+</mapper>
